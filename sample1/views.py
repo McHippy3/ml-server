@@ -8,9 +8,6 @@ from json import loads
 import random
 from .regression import run_regression
 
-def index(request):
-    return HttpResponse('Welcome to the ML Server')
-
 def results(request):
     return render(request, "results.html", {})
 
